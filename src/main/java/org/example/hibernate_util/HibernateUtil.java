@@ -6,6 +6,7 @@ import org.example.entity.Planet;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+@Getter
 public class HibernateUtil {
     private static final HibernateUtil INSTANCE;
 
@@ -13,7 +14,6 @@ public class HibernateUtil {
         INSTANCE = new HibernateUtil();
     }
 
-    @Getter
     private final SessionFactory sessionFactory;
 
     private HibernateUtil() {
